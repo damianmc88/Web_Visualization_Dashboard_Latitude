@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <title>Latitude</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="web_style.css">
+    <!-- <style> -->
+    <!-- img{ -->
+    <!-- margin-right:10px; -->
+    <!-- margin-bottom: 10px; -->
+    <!-- } -->
+    <!-- </style>  -->
+</head>
+
+<body>
+    <nav class=nav class="navbar navbar-light" id="myNavBar">
+        <div class="container-fluid navbar-custom">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="col-xs-9 phone-nav">
+                    <a class="navbar-brand" href="index.html" id="landing-btn">Latitude</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" navbar-right-custom>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="maxtemperature.html">Max Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="WindSpeed.html">Wind Speed</a></li>
+                        </ul>
+                    <li><a href="Comparison.html">Comparison</a></li>
+                    <li><a href="Data.html">Data</a></li>
+                    <li><a href=""> </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="row">
+            <div class="col-sm-8">
+                <article class="description-content">
+                    <h1 class="description-header">Summary: Latitude vs. X</h1>
+                    <!-- <div class="container"></div> -->
+                    <img src="Fig1.png" align=left alt="Latitude vs. Max Temperature" id="description-image"
+                        class="mr-4" width="200" height="175" />
+                    <p class="myRule">The purpose of this assignment was to analyze and visualize the weather of 500+
+                        cities across the world of varying distance from the equator.More specifically,
+                        we build a series of scatter plots to showcase the following relationships:Temperature (F) vs.
+                        Latitude,
+                        Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, Wind Speed (mph) vs. Latitude.
+                        To accomplish this we created a Python script that collected data from OpenWeatherMap API
+                        to create a representative model of weather across world cities.</p?>
+                        <p>Observation 1 - As expected, the weather becomes significantly warmer as one approaches the
+                            equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern
+                            hemisphere tends to be warmer this time of year than the northern hemisphere. This may be
+                            due to the tilt of the earth.<br>
+                            Observation 2 - There is no strong relationship between latitude and cloudiness. However, it
+                            is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.<br>
+                            </brf>
+                            Observation 3 - There is no strong relationship between latitude and wind speed. However, in
+                            northern hemispheres there is a flurry of cities with over 20 mph of wind.
+                        </p>
+                </article>
+            </div>
+            <div class="col-sm-4" id="imageNav-area">
+                <div class="imageNav-content">
+                    <h2 class="imageNav-header">Visualizations</h2>
+                    <hr />
+                    <div id="images">
+                        <a href="maxtemperature.html"><img src="Fig1.png" alt="Latitude vs. Max Temperature" width="140"
+                                height="120"></a>
+                        <a href="Humidity.html"><img src="Fig2.png" alt="Latitude vs. Humidity" width="140"
+                                height="120"></a>
+                        <a href="Cloudiness.html"><img src="Fig3.png" alt="Latitude vs. Cloudiness" width="140"
+                                height="120"></a>
+                        <a href="WindSpeed.html"><img src="Fig4.png" alt="Latitude vs. Wind Speed" width="140"
+                                height="120"></a>
+                    </div>
+                </div>
+                </article>
+            </div>
+        </section>
+        <footer class="footer navbar-fixed-bottom">
+            <div class="two-toned-footer-color"></div>
+            <p class="text-muted text-muted-footer text-center">
+                &copy; Damian McDonald 2019
+            </p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

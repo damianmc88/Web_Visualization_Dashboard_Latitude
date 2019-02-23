@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="web_style.css">
+</head>
+
+<body>
+  <nav class=nav class="navbar navbar-light" id="myNavBar">
+    <div class="container-fluid navbar-custom">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="col-xs-9 phone-nav">
+          <a class="navbar-brand" href="index.html" id="landing-btn">Latitude</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" navbar-right-custom>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="maxtemperature.html">Max Temperature</a></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li><a href="WindSpeed.html">Wind Speed</a></li>
+            </ul>
+          <li><a href="Comparison.html">Comparison</a></li>
+          <li><a href="Data.html">Data</a></li>
+          <li><a href=""> </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-sm-12">
+        <h1>Cloudiness</h1>
+        <hr>
+        <img src="Fig3.png" alt="Latiitude vs. Cloudiness" width="680" height="480">
+      </div>
+      <div class="col-lg-3 col-lg-offset-1 col-sm-12">
+        <h2>Visualizations</h2>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6 col-sm-3">
+            <a href="maxtemperature.html">
+              <img src="Fig1.png" alt="Latiitude vs. Max Temperature" width="140" height="120">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-3">
+            <a href="humidity.html">
+              <img src="Fig2.png" alt="Latitude vs. Humidity" width="140" height="120">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-3">
+            <a href="cloudiness.html">
+              <img src="Fig3.png" alt="Latitude vs. Cloudiness" width="140" height="120"
+                style="border: rgb(12, 173, 167) 3px solid;">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-3">
+            <a href="windspeed.html">
+              <img src="Fig4.png" alt="Latitude vs. Wind Speed" width="140" height="120">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Damian McDonald 2019
+    </p>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
